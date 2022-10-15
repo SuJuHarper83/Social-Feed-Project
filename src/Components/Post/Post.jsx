@@ -13,11 +13,13 @@
 const Posts = (props) => {
     return (
         <div>
-            <h4>{props.post.name}</h4>
+            <h3>{props.post.name}</h3>
             <p>{props.post.post}</p>
+            <p>{props.post.like}</p>
+            <p>{props.post.dislike}</p>
         </div>
-    )
-}
 
+  );
+}
 
 export default Posts;

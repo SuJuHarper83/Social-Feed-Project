@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CreatePostForm from "./Components/CreatePost/CreatePost";
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import NavBar from './Components/NavBar/NavBar';
+import Card from 'react-bootstrap/Card'
 // import './App.css';
 
 function App() {
@@ -22,15 +23,24 @@ function App() {
   // passes down to child components
   // page is divided into 12 columns
   return (
-    <div className='container-fluid'>
-      <div className='row'>
+    <div>
+    <Card style={{ width: '18rem'}}>
+      <Card.Body>
         <NavBar></NavBar>
-          <div className='border-box'>
-            <DisplayPosts parentPosts = {posts} />
-            <CreatePostForm createNewPosProperty = {createNewPost} />
-          </div>
-      </div>
+      </Card.Body>
+    </Card>
+    <Card style={{ width: '18rem'}}>
+      <Card.Body>
+        <CreatePostForm createNewPosProperty = {createNewPost} />
+      </Card.Body>
+    </Card>
+    <Card style={{ width: '18rem'}}>
+      <Card.Body>
+        <DisplayPosts parentPosts = {posts} />
+      </Card.Body>
+    </Card>
     </div>
+
   );
 }
 

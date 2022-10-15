@@ -3,18 +3,16 @@
 // Then, utilize the “map” higher order array method to map each post to its own Post component.
 import Posts from "../Post/Post";
 
-
 const DisplayPosts = (props) => {
     return ( 
         <div>
-            {props.parentPosts.map((post, index) => {
+            {props.parentPosts.map((newPost, index) => {
                 return (
-                    <Posts key={index} post={post}></Posts>
-                );
-            })}
+                <Posts post={newPost} index={index}></Posts>
+            );
+        })}
         </div>
     );
 }
- 
 
 export default DisplayPosts;

@@ -18,7 +18,9 @@ const CreatePostForm = (props) => {
         event.preventDefault();
         let newPost = {
             name: name,
-            post: post
+            post: post,
+            // like: like,
+            // dislike: dislike
         };
         console.log(newPost);
         props.createNewPostProperty(newPost)
