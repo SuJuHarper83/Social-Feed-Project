@@ -15,8 +15,7 @@ const Posts = (props) => {
         <div>
             <h3>{props.post.name}</h3>
             <p>{props.post.post}</p>
-            <p>{props.post.like}</p>
-            <p>{props.post.dislike}</p>
+            {/*  call our button component here */}
         </div>
 
   );
