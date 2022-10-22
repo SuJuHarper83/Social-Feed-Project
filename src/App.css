@@ -30,12 +30,12 @@ body {
 .Card {
     width: 500px;
     background-color: white;
-    padding-top: 5px; 
+    padding: 10px; 
     margin: 0 auto;
-    border-color: black;
-    border-width: 5px;    
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 1px solid black;  
+    box-shadow: 5px 7px 10px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
+    border-radius: 8px;
 }
 
 /* .form-group {

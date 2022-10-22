@@ -5,14 +5,12 @@ import Posts from "../Post/Post";
 
 const DisplayPosts = (props) => {
     return ( 
-        <div class='Card'>
-            <div class='container'>
-                {props.parentPosts.map((post) => {
-                    return (
-                    <Posts post={post}></Posts>
-                );
-            })}
-            </div>
+        <div class='Card' >
+            {props.parentPosts.map((post) => {
+                return (
+                <Posts post={post}></Posts>
+            );
+        })}
         </div>
     );
 }

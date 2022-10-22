@@ -37,16 +37,12 @@ function App() {
       </header>
       <br />
     </div>
-    <div className = 'Card'>
-      <div class = 'container'>
-          <CreatePostForm createNewPostProperty = {createNewPost} />
-      </div>
+    <div>
+        <CreatePostForm createNewPostProperty = {createNewPost} />
     </div>
     <br />
-    <div className = 'Card'>
-      <div class='container'>
-          <DisplayPosts parentPosts = {posts} />
-      </div>
+    <div>
+        <DisplayPosts parentPosts = {posts} />
     </div>
   </div>  
 </body>

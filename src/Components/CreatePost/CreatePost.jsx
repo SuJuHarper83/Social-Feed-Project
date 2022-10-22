@@ -29,14 +29,12 @@ const CreatePostForm = (props) => {
 return ( 
     <form onSubmit={handleSubmit}>
         <div class='Card'>
-            <div class='container'>
-                <label className='Name'>Name</label>                                          
-                <input type="name" className="form-control-name" value={name} onChange={(event) => setName(event.target.value)} />
-                <br />
-                <label className='Post'>Post</label>
-                <input type="post" className="form-control-name" value={post} onChange={(event) => setPost(event.target.value)}/>
-                <button type="create" className="btn-btn-primary">Create</button>
-            </div>
+            <label className='Name'>Name</label>                                          
+            <input type="name" className="form-control-name" value={name} onChange={(event) => setName(event.target.value)} />
+            <br />
+            <label className='Post'>Post</label>
+            <input type="post" className="form-control-name" value={post} onChange={(event) => setPost(event.target.value)}/>
+            <button type="create" className="btn-btn-primary">Create</button>
         </div>
     </form>
  );
