@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import CreatePostForm from "./Components/CreatePost/CreatePost";
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import NavBar from './Components/NavBar/NavBar';
-import Card from 'react-bootstrap/Card'
-// import './App.css';
+import './App.css';
 
 // Think of the app.jsx as the table of contents, and each of the compnents as a page
 // people can edit the page, but the TOC will remain solid and the elements will all filter
@@ -30,29 +29,27 @@ function App() {
   // These can be inline styling - however they can be class named and styled in the css file
  
   return (
+<body>
   <div>
     <div>
-      <Card className = 'nav' style={{ width: '18rem'}}>
-      <Card.Title className = 'NavBar'>
-          <NavBar></NavBar>
-      </Card.Title>
-      </Card>
+      <header>
+        <NavBar></NavBar>
+      </header>
+      <br />
     </div>
-    <div>
-      <Card className = 'Post' style={{ width: '18rem'}}>
-      <Card.Header className = 'CreatedPost'>
+    <div className = 'Card'>
+      <div class = 'container'>
           <CreatePostForm createNewPostProperty = {createNewPost} />
-      </Card.Header>
-      </Card>
+      </div>
     </div>
-    <div>
-      <Card className = 'feed' style={{ width: '18rem'}}>
-      <Card.Body className = 'PostFeed' >
+    <br />
+    <div className = 'Card'>
+      <div class='container'>
           <DisplayPosts parentPosts = {posts} />
-      </Card.Body>
-      </Card>
+      </div>
     </div>
   </div>  
+</body>
 
  );
 

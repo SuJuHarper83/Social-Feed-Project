@@ -26,19 +26,20 @@ const CreatePostForm = (props) => {
         props.createNewPostProperty(newPost)
     }
 
-    return ( 
-        <form onSubmit={handleSubmit} className="form-grid">
-            <div className='form-group'>
-                <label>Name</label>                                          
-                <input type="name" className="form-control" value={name} onChange={(event) => setName(event.target.value)} />
+return ( 
+    <form onSubmit={handleSubmit}>
+        <div class='Card'>
+            <div class='container'>
+                <label className='Name'>Name</label>                                          
+                <input type="name" className="form-control-name" value={name} onChange={(event) => setName(event.target.value)} />
+                <br />
+                <label className='Post'>Post</label>
+                <input type="post" className="form-control-name" value={post} onChange={(event) => setPost(event.target.value)}/>
+                <button type="create" className="btn-btn-primary">Create</button>
             </div>
-            <div className='form-group'>
-                <label>Post</label>
-                <input type="post" className="form-control" value={post} onChange={(event) => setPost(event.target.value)}/>
-            </div>
-            <button type="create" className="btn btn-primary" style={{'margin-top': '1em'}}>Create</button>
-        </form>
-     );
+        </div>
+    </form>
+ );
 }
  
 export default CreatePostForm;
