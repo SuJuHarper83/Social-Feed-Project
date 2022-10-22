@@ -10,8 +10,8 @@ const Posts = (props) => {
             <h3>{props.post.name}</h3>
             <p>{props.post.post}</p>
             {/*  call our button component here */}
-            {/* <p>{props.post.like}</p>
-            <p>{props.post.dislike}</p> */}
+            <p>{props.post.likeButton}</p>
+            <p>{props.post.dislikeButton}</p>
         </div>
 
   );
