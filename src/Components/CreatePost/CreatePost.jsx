@@ -8,7 +8,6 @@
 // and update the App.js state variable with the new array.
 
 import React, { useState } from 'react';
-import LikeButtons from '../LikeButtons/LikeButtons';
 
 const CreatePostForm = (props) => {
 
@@ -20,8 +19,6 @@ const CreatePostForm = (props) => {
         let newPost = {
             name: name,
             post: post,
-            like: likeButton,
-            dislike: dislikeButton,
         };
         console.log(newPost);
         props.createNewPostProperty(newPost)
@@ -36,6 +33,9 @@ return (
             <label className='Post'>Post</label>
             <input type="post" className="form-control-name" value={post} onChange={(event) => setPost(event.target.value)}/>
             <button type="create" className="btn-btn-primary">Create</button>
+            <br />
+        
+
         </div>
     </form>
  );

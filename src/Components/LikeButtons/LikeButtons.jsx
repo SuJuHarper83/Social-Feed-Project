@@ -10,25 +10,26 @@
 // just decide where and how you would like them to display on each individual post!
 
 import { useState } from 'react'
-import './LikeButtons.css'
 
 const LikeButtons = (props) => {
     
     const [likeButton, setLikeButton] = useState('inactive');
     const [dislikeButton, setDislike] = useState('inactive');
 
-    function handleLike(event){
+    function handleLike(likeButton){
         if (likeButton === 'inactive'){
-            setLikeButton('active');
+            setLikeButton('activeLike');
+            setDislike('inactive');
         }
         else{
             setLikeButton('inactive');
         }
 }
 
-    function handleDislike(event){
+    function handleDislike(dislikeButton){
         if (dislikeButton === 'inactive'){
-            setDislike('active');
+            setDislike('activeDislike');
+            setLikeButton('inactive');
         }
         else{
             setDislike('inactive');
@@ -38,10 +39,10 @@ const LikeButtons = (props) => {
     return (
         <div>
             <div>
-                <button className={likeButton} onClick={(event) => handleLike}>{props.likeButton}</button>
+                <button className={likeButton} onClick={handleLike}>{props.likeButton}</button>
             </div>
             <div>
-                <button className={dislikeButton} onClick={(event) => handleDislike}>{props.dislikeButton}</button>
+                <button className={dislikeButton} onClick={handleDislike}>{props.dislikeButton}</button>
             </div>
         </div>
     )

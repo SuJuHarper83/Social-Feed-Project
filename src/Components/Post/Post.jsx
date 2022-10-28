@@ -3,15 +3,14 @@
 
 // Then, utilize the “map” higher order array method to map each post to its own Post component.
 // This is done in the app.jsx file
-
+import LikeButtons from "../LikeButtons/LikeButtons";
 const Posts = (props) => {
     return (
         <div>
             <h3>{props.post.name}</h3>
             <p>{props.post.post}</p>
             {/*  call our button component here */}
-            <p>{props.post.likeButton}</p>
-            <p>{props.post.dislikeButton}</p>
+            <LikeButtons />
         </div>
 
   );

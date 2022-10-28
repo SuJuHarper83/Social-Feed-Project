@@ -84,3 +84,30 @@ body {
     border-radius: 20px;
 }
 
+.likeButton {
+    background: url(../src/Components/LikeButtons/assets/like.png) no-repeat;
+    border: none;
+    width: 20px;
+    height: 20px;
+    float: right
+ }
+
+ .dislikeButton {
+    background: url(../src/Components/LikeButtons/assets/dislike.png) no-repeat;
+    border: none;
+    width: 20px;
+    height: 20px;
+    float: right
+ }
+ 
+ .activeLike {
+    width: auto;
+ }
+ .activeDislike {
+    width: auto;
+ }
+ .inactive{
+    width: auto;
+ }
+ 
+ 
