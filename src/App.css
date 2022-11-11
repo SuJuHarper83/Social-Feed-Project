@@ -98,26 +98,26 @@ body {
     border-radius: 20px;
 }
 
-.thumbs-up {
-    /* color: black; */
-    opacity: 1;
+.likeButton {
+    background-image: url(../src/Components/Post/Assets/like.png) alt="Thumbs Up";
+    background-size: cover;
     border: none;
     width: 30px;
     height: 30px;
-    padding-right: 60px;
+    padding-right: 20px;
     float: right
  }
 
- .thumbs-down {
-    /* color: black; */
-    opacity: 1;
+ .dislikeButton {
+    background-image: url(../src/Components/Post/Assets/dislike.png) alt="Thumbs Down";
+    background-size: cover;
     border: none;
     width: 30px;
     height: 30px;
-    padding-right: 30px;
+    padding-right: 5px;
     float: right
  }
- 
+  
  .activeLike {
     color:blue
  }

@@ -38,11 +38,11 @@ const LikeButtons = (props) => {
 
     return (
         <div>
-            <div>
-                <button className={likeButton} onClick={handleLike}>{props.likeButton}</button>
+            <div className="likeButton">
+                <button type="toggle" className={likeButton} onClick={handleLike}>{props.likeButton}</button>
             </div>
-            <div>
-                <button className={dislikeButton} onClick={handleDislike}>{props.dislikeButton}</button>
+            <div className="dislikeButton">
+                <button type="toggle" className={dislikeButton} onClick={handleDislike}>{props.dislikeButton}</button>
             </div>
         </div>
     )
