@@ -27,10 +27,24 @@ body {
     color: gray;
 }
 
-.Card {
+.Post_Card {
     width: 500px;
     background-color: white;
-    padding: 10px; 
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid black;  
+    box-shadow: 5px 7px 10px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.Display_Card {
+    width: 500px;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
     margin: 0 auto;
     border: 1px solid black;  
     box-shadow: 5px 7px 10px 0 rgba(0,0,0,0.4);
@@ -84,30 +98,36 @@ body {
     border-radius: 20px;
 }
 
-.likeButton {
-    background: url(../src/Components/LikeButtons/assets/like.png) no-repeat;
+.thumbs-up {
+    /* color: black; */
+    opacity: 1;
     border: none;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    padding-right: 60px;
     float: right
  }
 
- .dislikeButton {
-    background: url(../src/Components/LikeButtons/assets/dislike.png) no-repeat;
+ .thumbs-down {
+    /* color: black; */
+    opacity: 1;
     border: none;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    padding-right: 30px;
     float: right
  }
  
  .activeLike {
-    width: auto;
+    color:blue
  }
+
  .activeDislike {
-    width: auto;
+    color: red
  }
+
  .inactive{
-    width: auto;
+    color: gray
  }
  
  
