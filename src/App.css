@@ -52,11 +52,32 @@ body {
     border-radius: 8px;
 }
 
-/* .form-group {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: gray;
-    padding-top: 3px;
-} */
+.like {
+    background-image: url(../src/Components/Post/Assets/inactive\ like.png);
+    border: none;
+    width: 25px;
+    padding-right: 20px;
+    float: right
+ }
+
+ .dislike {
+    background-image: url(../src/Components/Post/Assets/inactive\ dislike.png);
+    border: none;
+    width: 15px;
+    padding-right: 30px;
+    float: right
+ }
+
+ .activeLike {
+    background-image: url(../src/Components/Post/Assets/active\ like.png);
+    width: 15px;
+    padding-right: 15px;
+    float: right
+ }
+
+ .activeDislike {
+    background-image: url(../src/Components/Post/Assets/active\ dislike.png);
+ }
 
 .form-control-name {
     width: 300px;
@@ -97,37 +118,8 @@ body {
     padding-right: 30px;
     border-radius: 20px;
 }
-
-.likeButton {
-    background-image: url(../src/Components/Post/Assets/like.png) alt="Thumbs Up";
-    background-size: cover;
-    border: none;
-    width: 30px;
-    height: 30px;
-    padding-right: 20px;
-    float: right
- }
-
- .dislikeButton {
-    background-image: url(../src/Components/Post/Assets/dislike.png) alt="Thumbs Down";
-    background-size: cover;
-    border: none;
-    width: 30px;
-    height: 30px;
-    padding-right: 5px;
-    float: right
- }
   
- .activeLike {
-    color:blue
- }
 
- .activeDislike {
-    color: red
- }
 
- .inactive{
-    color: gray
- }
  
  

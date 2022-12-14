@@ -10,13 +10,18 @@
 // just decide where and how you would like them to display on each individual post!
 
 import { useState } from 'react'
+import inactive_dislike from '../Post/Assets/inactive dislike.png'
+import inactive_like from '../Post/Assets/inactive like.png'
+// import active_dislike from '../Post/Assets/active_dislike.png'
+// import active_like from '../Post/Assets/active_like.png'
+
 
 const LikeButtons = (props) => {
     
     const [likeButton, setLikeButton] = useState('inactive');
     const [dislikeButton, setDislike] = useState('inactive');
 
-    function handleLike(likeButton){
+    function handleLike(){
         if (likeButton === 'inactive'){
             setLikeButton('activeLike');
             setDislike('inactive');
@@ -26,7 +31,7 @@ const LikeButtons = (props) => {
         }
 }
 
-    function handleDislike(dislikeButton){
+    function handleDislike(){
         if (dislikeButton === 'inactive'){
             setDislike('activeDislike');
             setLikeButton('inactive');
@@ -38,11 +43,11 @@ const LikeButtons = (props) => {
 
     return (
         <div>
-            <div className="likeButton">
-                <button type="toggle" className={likeButton} onClick={handleLike}>{props.likeButton}</button>
+            <div className="like">
+                <button type="toggle" className={likeButton} onClick={handleLike}><img src={inactive_like} alt="Thumbs Up" width={18}></img></button>
             </div>
-            <div className="dislikeButton">
-                <button type="toggle" className={dislikeButton} onClick={handleDislike}>{props.dislikeButton}</button>
+            <div className="dislike">
+                <button type="toggle" className={dislikeButton} onClick={handleDislike}><img src={inactive_dislike} alt="Thumbs Down" width={15}></img></button>
             </div>
         </div>
     )
